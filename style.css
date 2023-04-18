@@ -12,7 +12,8 @@ body{
 }
 header{
 
-background-color: rgba(255, 144, 14, 0.1);}
+background-color: rgba(255, 144, 14, 0.1);
+width: 100%;}
 
 p{
     font-size: 12px;
@@ -118,7 +119,7 @@ p{
 }
 /* fact section  */
 .facts-section{
-    margin-top: 80px;
+    margin-top:0px;
 }
 .facts-section h1{
     font-size: 30px;
@@ -151,8 +152,14 @@ transform: scale(90%);
     font-size: 13px;
     font-weight: bold;
 }
-
-
+/* achivement section start  */
+.achivement{
+    margin-top: 80px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+   
+}
 /* Sponsor section  */
 
 .sponsor-description{
@@ -228,6 +235,18 @@ padding: 20px;
    
     left: 24%;
 }
+.achivement{
+flex-direction: column;
+   
+}
+.achivement-image img{
+    width: 100%;
+}
+.achivement-desc{
+    width: 100%;
+    padding: 10px 20px;
+}
+
 .facts{
  
     grid-template-columns: repeat(1,1fr);
