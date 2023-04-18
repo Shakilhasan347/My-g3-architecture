@@ -12,14 +12,12 @@ body{
 }
 header{
 
-background-color: rgba(255, 144, 14, 0.1);
+background-color: rgba(255, 144, 14, 0.1);}
 
-
-
-
+p{
+    font-size: 12px;
+    color:#727272 ;
 }
-
-
 /* -------------------------heading section-------------------------  */
 
 /* navbar */
@@ -90,6 +88,90 @@ background-color: rgba(255, 144, 14, 0.1);
  row-gap: 20px;
  column-gap: 20px;
 }
+/* Enjoy features section */
+.enjoy-features{
+    margin-top:80px;
+    display: flex;
+    gap: 50px;
+}
+.enjoy-features-image{
+   width: 100%;
+}
+.enjoy-features-image img{
+    width: 95%;
+}
+.features-dec h1{
+    font-size: 2.5em;
+    padding-left: 10px;
+    border-left: 5px solid #FF900E;
+    
+}
+.features-box{
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 15px rgb(200, 196, 196);
+}
+.features-btn {
+    position: relative;
+    top: -105px;
+    left: -4%;
+}
+/* fact section  */
+.facts-section{
+    margin-top: 80px;
+}
+.facts-section h1{
+    font-size: 30px;
+    margin-bottom: 0px;
+
+}
+.facts{
+    text-align: center;
+    display: grid;
+    margin-top: 80px;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+
+}
+
+.facts div{
+    height:100px;
+    width: 120px;
+    padding: 30px;
+ border: 2px solid #FF900E;
+ transition: 0.5s all;
+}
+.facts div:hover{
+transform: scale(90%);
+}
+.facts div b{
+    font-size: 30px;
+}
+.facts div p{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* Sponsor section  */
+
+.sponsor-description{
+    margin-top: 50px;
+    text-align: center;
+}
+.sopnsor-brand{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+}
+.footer{
+    margin-top: 40px;
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 20px;
+    text-align:center;
+}
+
 
 /*--------------------------- media queries---------------------  */
 
@@ -122,6 +204,9 @@ padding: 20px;
   width: 100%;
   height: 100%;
 }
+.banner-image img{
+    height: 300px;
+}
 .features-image{
     
     grid-template-columns: repeat(1,1fr);
@@ -131,6 +216,31 @@ padding: 20px;
 .features{
    flex-direction: column;
    text-align: center;
+}
+.enjoy-features{
+   flex-direction: column;
+}
+.enjoy-features-image img{
+    width: 100%;
+}
+.features-btn {
+   
+   
+    left: 24%;
+}
+.facts{
+ 
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 20px;
+  
+
+}
+.sopnsor-brand{
+   
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 40px;
+    
+  
 }
 
 
